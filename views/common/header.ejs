@@ -1,0 +1,171 @@
+<div id="header">
+    <div class="h_top">
+        <div class=center>
+            <ul class="sns">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            </ul>
+            <ul class="right_box">
+                <% if(!userData){ %>
+                <li><a href="/login">로그인</a></li>
+                <li><a href="/join">회원가입</a></li>
+                <% }else{ %>
+                <li><a href="/mypage"><%- userData.member_name %></a><span> 님</span></li>
+                <li><a href="/logout">로그아웃</a></li>
+                <% } %>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h_bot">
+        <div class="center">
+            <h1 class="logo"><a href="/"><img src="/img/logo.jpg" alt=""></a></h1>
+            <ul class="gnb">
+                <li>
+                    <a href="/nothing">해외패키지</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">아시아</a></li>
+                        <li><a href="#">유럽</a></li>
+                        <li><a href="#">미국</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/nothing">개별여행</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">투어</a></li>
+                        <li><a href="#">패스</a></li>
+                        <li><a href="#">입장권</a></li>
+                        <li><a href="#">차량서비스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/nothing">테마여행</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">허니문</a></li>
+                        <li><a href="#">우정</a></li>
+                        <li><a href="#">크루즈</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/hotel">호텔</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">해외호텔</a></li>
+                        <li><a href="#">국내호텔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/nothing">항공</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">해외항공</a></li>
+                        <li><a href="#">국내항공</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/nothing">여행자보험</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">가입하기</a></li>
+                        <li><a href="#">조회하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/list">커뮤니티</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">여행후기</a></li>
+                        <li><a href="#">사진전</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile_menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 모바일 메뉴판 -->
+    <div class="mobile_board">
+        <div class="btn_wrap">
+            <div class="board_btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="m_top">
+            <ul class="m_login">
+                <% if(!userData){ %>
+                    <li><a href="/login">로그인</a></li>
+                    <li><a href="/join">회원가입</a></li>
+                <% }else{%>
+                    <li><a href="/mypage"><%- userData.member_name %></a><span> 님</span></li>
+                    <li><a href="/logout">로그아웃</a></li>
+                <% } %>
+            </ul>
+            <a class="t_right" href="#">고객센터</a>
+        </div>
+        <ul class="m_gnb_menu">
+            <li>
+                <a href="/nothing">해외패키지</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">아시아</a></li>
+                    <li><a href="#">유럽</a></li>
+                    <li><a href="#">미국</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nothing">개별여행</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">투어</a></li>
+                    <li><a href="#">패스</a></li>
+                    <li><a href="#">입장권</a></li>
+                    <li><a href="#">차량서비스</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nothing">테마여행</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">허니문</a></li>
+                    <li><a href="#">우정</a></li>
+                    <li><a href="#">크루즈</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/hotel">호텔</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">해외호텔</a></li>
+                    <li><a href="#">국내호텔</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nothing">항공</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">해외항공</a></li>
+                    <li><a href="#">국내항공</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nothing">여행자보험</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">가입하기</a></li>
+                    <li><a href="#">조회하기</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/list">커뮤니티</a><i class="fa-solid fa-angle-right"></i>
+                <ul class="m_sub_menu">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">여행후기</a></li>
+                    <li><a href="#">사진전</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- js -->
+<script src="/js/gnb_sub_menu.js"></script>
+<script src="/js/mobile_menu.js"></script>

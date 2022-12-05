@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔(서브페이지)</title>
+    <%- include("common/font_icon.ejs"); %>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include("common/header.ejs"); %>
+    <div id="container">
+        <%- include("common/banner.ejs"); %>
+        <!-- where 영역 -->
+        <div class="where">
+            <div class="center">
+                <h3 class="title">어디로 가시나요?</h3>
+                <div class="sub_popular_local">
+                    <p class="subtitle">최근 <span>인기</span>많은 지역</p>
+                    <div class="local_list_wrap">
+                        <!-- 나중에 반복문으로 만들어보기 -->
+                        <a href="#">
+                            <div class="local_list">
+                                <img class="local_bg" src="/img/jeju.jpg" alt="제주도 풍경 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>제주</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="local_list">
+                                <img class="local_bg" src="/img/busan.jpg" alt="부산 풍경 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>부산</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="local_list">
+                                <img class="local_bg" src="/img/seoul2.jpg" alt="서울 풍경 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>서울</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="local_list">
+                                <img class="local_bg" src="/img/chuncheon.jpg" alt="춘천 풍경 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>춘천</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme_hotel">
+                    <p class="subtitle">다양한 <span>분위기</span>의 숙소</p>
+                    <div class="theme_list_wrap">
+                        <!-- 나중에 반복문으로 만들어보기 -->
+                        <a href="#">
+                            <div class="theme_list">
+                                <img class="theme_bg" src="/img/modern.jpg" alt="모던한 분위기의 방 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>모던한</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="theme_list">
+                                <img class="theme_bg" src="/img/expensive.jpg" alt="고급진 분위기의 방 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>고급진</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="theme_list">
+                                <img class="theme_bg" src="/img/cozy.jpg" alt="아늑한 분위기의 방 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>아늑한</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="theme_list">
+                                <img class="theme_bg" src="/img/colorful.jpg" alt="화려한 분위기의 방 이미지입니다.">
+                                <div class="text_box"><span class="hash_tag">#</span>화려한</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a class="hotel_more" href="#">더 다양한 지역과 숙소 둘러보기<i class="fa-solid fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- slide_hotel 영역 -->
+        <!-- <div class="slide_hotel">
+            <div class="center">
+                <h2 class="title">호텔 리뷰</h2>
+                <div class="silde_wrap">
+                    <div class="silde_view">
+                        <div class="slide_box">
+                            <p class="review_title">이것은 타이틀 제목입니다1</p>
+                            <p class="context">
+                                첫번째 문단입니다. <br>
+                                두번째 문단입니다.
+                            </p>
+                            <div class="person">
+                                <div class="person_img"></div>
+                                <div class="name_hotel">
+                                    <p class="hotel">숙박했던 호텔</p>
+                                    <p class="name">사용자 이름</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_box">
+                            <p class="review_title">이것은 타이틀 제목입니다2</p>
+                            <p class="context">
+                                첫번째 문단입니다. <br>
+                                두번째 문단입니다.
+                            </p>
+                            <div class="person">
+                                <div class="person_img"></div>
+                                <div class="name_hotel">
+                                    <p class="hotel">숙박했던 호텔</p>
+                                    <p class="name">사용자 이름</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_box">
+                            <p class="review_title">이것은 타이틀 제목입니다3</p>
+                            <p class="context">
+                                첫번째 문단입니다. <br>
+                                두번째 문단입니다.
+                            </p>
+                            <div class="person">
+                                <div class="person_img"></div>
+                                <div class="name_hotel">
+                                    <p class="hotel">숙박했던 호텔</p>
+                                    <p class="name">사용자 이름</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- many_hotel 영역 -->
+        <div class="many_hotel">
+            <div class="center">
+                <div class="text_box">
+                    <h3 class="title">이 달의<span> 특가</span> 숙소</h3>
+                    <p class="sub_title">최저가로 숙소를 구해보아요~</p>
+                </div>
+                <div class="hotel_box_wrap">
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel01.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>4성급</span>
+                                </div>
+                                <p class="hotel_title">[제주] 유탑 유블레스호텔</p>
+                                <p class="price">최저가 <span>128,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel02.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>5성급</span>
+                                </div>
+                                <p class="hotel_title">[여수] 소노캄 여수</p>
+                                <p class="price">최저가 <span>298,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel03.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>5성급</span>
+                                </div>
+                                <p class="hotel_title">[제주] 롯데제주호텔</p>
+                                <p class="price">최저가 <span>428,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel04.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>4성급</span>
+                                </div>
+                                <p class="hotel_title">[경주] 베스트 웨스턴 플러스</p>
+                                <p class="price">최저가 <span>78,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel05.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>4성급</span>
+                                </div>
+                                <p class="hotel_title">[양양] 38 마린 리조트</p>
+                                <p class="price">최저가 <span>110,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel06.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>3성급</span>
+                                </div>
+                                <p class="hotel_title">[대구] 호텔 라온제나</p>
+                                <p class="price">최저가 <span>97,900</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel07.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>5성급</span>
+                                </div>
+                                <p class="hotel_title">[인천] 파라다이스시티</p>
+                                <p class="price">최저가 <span>314,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel08.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>5성급</span>
+                                </div>
+                                <p class="hotel_title">[서울] 페어필드 바이 메리어트 서울</p>
+                                <p class="price">최저가 <span>125,000</span> ~</p>
+                            </a>
+                        </div>
+                        <div class="hotel_box">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="/img/sub_hotel09.jpg" alt="호텔 이미지입니다.">
+                                </div>
+                                <div class="rank">
+                                    <i class="fa-solid fa-star"></i><span>5성급</span>
+                                </div>
+                                <p class="hotel_title">[전주] 고현당</p>
+                                <p class="price">최저가 <span>238,000</span> ~</p>
+                            </a>
+                        </div>
+                    
+                </div>
+                <a class="more_btn" href="">더보기<i class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+        <!-- notice 영역 -->
+        <div class="notice">
+            <div class="center">
+                <div class="notice_wrap">
+                    <a href="#">
+                        <div class="notice_box">
+                            <span class="material-symbols-outlined">content_paste</span>
+                            <p>공지사항</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="notice_box">
+                            <span class="material-symbols-outlined">help</span>
+                            <p>FAQ</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="notice_box">
+                            <span class="material-symbols-outlined">savings</span>
+                            <p>마일리지</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="notice_box">
+                            <span class="material-symbols-outlined">phone_in_talk</span>
+                            <p>상담전화</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="notice_box">
+                            <span class="material-symbols-outlined">luggage</span>
+                            <p>예약정보</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 맨 위로 가는 기능 -->
+    <%- include("common/go_top.ejs"); %>
+    <%- include("common/footer.ejs"); %>
+    <!-- js -->
+    <script src="/js/sub_more_hotel.js"></script>
+</body>
+</html>

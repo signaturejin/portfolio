@@ -1,0 +1,87 @@
+<% if(!userData){ %>
+    <script>
+        alert("로그인이 필요한 서비스입니다.");
+        location.href = "/login";
+    </script>
+<% } %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록페이지</title>
+    <%- include("common/font_icon.ejs"); %>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include("common/header.ejs"); %>
+    <div id="container">
+        <%- include("common/banner.ejs"); %>
+        <div class="travel_list">
+            <div class="center">
+                <!-- <div class="text_box">
+                    <h2 class="title">여행후기</h2>
+                    <p class="subtitle">직접 경험한 멋진 풍경들을 같이 공유해봐요.</p>
+                </div> -->
+                <div class="wrap">
+                    <div class="list_wrap">
+                        <div class="text_box">
+                            <h2 class="title">여행후기</h2>
+                            <p class="subtitle">직접 경험한 멋진 풍경들을 같이 공유해봐요.</p>
+                        </div>
+                        <% for(let i=0; i<brdData.length; i++){ %>
+                        <div class="list_box">
+                            <div class="left">
+                                <div class="name_date">
+                                    <p class="user_name"><%- brdData[i].user_name %></p>
+                                    <p class="user_date"><%- brdData[i].insert_date.substr(0,10) %></p>
+                                </div>
+                                <div class="title_text">
+                                    <h3 class="user_title"><a href="/detail/<%- brdData[i].brd_no %>"><%- brdData[i].user_title %></a></h3>
+                                    <p class="user_context"><%- brdData[i].user_context %></p>
+                                </div>
+                                <div class="review_comment">
+                                    <span class="review">조회수 <%- brdData[i].user_review %></span>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <% if(brdData[i].user_file) { %>
+                                <img src="/upload/<%- brdData[i].user_file %>" alt="">
+                                <% } else{ %>
+                                <img src="/img/noimgs.jpg">
+                                <%}%>
+                            </div>
+                        </div>
+                        <% } %>
+                        <div class="btn_wrap">
+                            <a class="write_btn" href="/insert">글쓰기</a>
+                        </div>
+                    </div>
+                    <!-- 광고 영역 -->
+                    <div class="ad_wrap">
+                        <div class="ad_box">
+                            <div class="ad_text_box">
+                                <h3 class="ad_title">내 맘대로<br>자유로운 국내여행</h3>
+                                <p class="ad_text">원하는 것만 골라 떠나는 나만의 자유여행!</p>
+                            </div>
+                        </div>
+                        <div class="ad_box">
+                            <div class="ad_text_box">
+                                <h3 class="ad_title">지금 바로<br>산 보러 가자~</h3>
+                                <p class="ad_text">넓은 전경을 볼 수 있는 기회!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="btn_wrap">
+                    <a class="write_btn" href="/insert">글쓰기</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- 맨 위로 가는 기능 -->
+    <%- include("common/go_top.ejs"); %>
+    <%- include("common/footer.ejs"); %>
+</body>
+</html>

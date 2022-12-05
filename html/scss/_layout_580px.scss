@@ -1,0 +1,139 @@
+@media screen and (max-width: 580px) {
+    // 상단영역
+    #header {
+        > div {
+            .center {width: 95%;}
+        }
+    }
+    // 중간영역
+    #container {
+        // 메인페이지 popular_local 영역
+        .popular_local {
+            .center {
+                width: 95%;
+                .local_wrap {
+                    flex-direction: column;
+                    .local_box {
+                        width: 100%;
+                        &:nth-child(2) {transform: translateY(-300%);}
+                        &:nth-child(4) {width: 100%;}
+                    }
+                }
+            }
+        }
+        //메인페이지 local_video 영역
+        .local_video {
+            .center {
+                width: 95%;
+                .context_wrap {
+                    > div {width: 100%;}
+                    .left {margin-bottom: 30px;}
+                    .right {
+                        .box_list {
+                            flex-direction: column;
+                            .phcheon_img {margin-right: 0;}
+                            .text_box {
+                                .text1 {
+                                    text-align: center;
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //메인페이지 tour_bus 영역
+        .tour_bus {
+            .center {
+                width: 95%;
+                .bus_wrap {
+                    transform: translateY(215%);
+                    flex-wrap: wrap;
+                    .bus_box {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        //메인페이지 local_count 영역
+        .local_count {
+            .center {
+                width: 95%;
+                .count_wrap {
+                    flex-wrap: wrap; justify-content: center;
+                    .count_box {
+                        width: 45%;
+                        margin: 1%;
+                        &:last-child {width: 100%;}
+                    }
+                }
+            }
+        }
+        //메인페이지 package 영역
+        .package {
+            .center {width: 95%;}
+        }
+        //메인페이지 free_tour 영역
+        .free_tour {
+            .center {
+                width: 95%;
+                .free_wrap {
+                    .free_box {margin-bottom: 3%;}
+                }
+            }
+        }
+        // 메인페이지 map 영역
+        .comp_map {
+            .center {width: 95%;}
+        }
+        // 배너 영역
+        .banner.list {
+            .center {width: 95%;}
+        }
+        // 호텔페이지 where 영역
+        .where {
+            .center {
+                width: 95%;
+                .sub_popular_local,.theme_hotel {
+                    .local_list_wrap,.theme_list_wrap {
+                        flex-direction: column;
+                        > a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        // 호텔페이지 many_hotel 영역
+        .many_hotel {
+            .center {width: 95%;}
+        }
+        // 호텔페이지 notice 영역
+        .notice {
+            .center {width: 95%;}
+        }
+        // 목록페이지 영역
+        .travel_list {
+            .center {
+                width: 95%;
+                .list_wrap {
+                    .list_box {width: 100%;}
+                }
+            }
+        }
+        // 작성페이지 및 수정페이지 영역
+        .insert_wrap,.update_wrap {
+            .center {
+                width: 95%;
+                #insert_form,#update_form {
+                    .name_box {
+                        width: 32%;
+                        .name_text {width: 37%;}
+                        .name {width: 60%;}
+                    }
+                }
+            }
+        }
+    }
+}

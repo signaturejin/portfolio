@@ -1,0 +1,175 @@
+@media screen and (max-width: 768px) {
+    // 상단영역
+    #header {
+        > div {
+            .center {width: 90%;}
+        }
+        .h_bot {
+            .center {
+                height: 65px;
+                align-items: center;
+            }
+            .gnb {
+                display: none;
+            }
+            .mobile_menu {
+                display: block;
+            }
+        }
+    }
+    // 중간영역
+    #container {
+        // 메인페이지 popular_local 영역
+        .popular_local {
+            .center {
+                width: 90%;
+            }
+        }
+        //메인페이지 local_video 영역
+        .local_video {
+            .center {
+                width: 90%;
+                .context_wrap {
+                    > div {width: 100%;}
+                    .left {margin-bottom: 0;}
+                }
+            }
+        }
+        //메인페이지 tour_bus 영역
+        .tour_bus {
+            .center {
+                width: 90%;
+                .bus_wrap {
+                    transform: translateY(-215%);
+                    flex-wrap: wrap;
+                    .bus_box {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+        //메인페이지 local_count 영역
+        .local_count {
+            .center {
+                width: 90%;
+                .count_wrap {
+                    flex-wrap: wrap; justify-content: center;
+                    .count_box {
+                        width: 22%;
+                        margin: 2%;
+                        &:last-child {width: 49%;}
+                    }
+                }
+            }
+        }
+        //메인페이지 package 영역
+        .package {
+            .center {
+                width: 90%;
+                // .package_wrap {
+                //     .right {
+                //         .local {
+                //             left: 390px;
+                //         }
+                //     }
+                // }
+            }
+        }
+        //메인페이지 free_tour 영역
+        .free_tour {
+            .center {width: 90%;}
+        }
+        // 메인페이지 map 영역
+        .comp_map {
+            .center {
+                width: 90%;
+                .map_wrap {
+                    flex-direction: column;
+                    .left {
+                        font-size: 18px; width: 100%;
+                        margin-bottom: 25px;
+                    }
+                    #map {width: 100%;}       
+                }
+            }
+        }
+        // 클래스 'on'이 붙었을 때
+        .section.on {
+            .center {
+                //클래스 'on' 붙은 package 영역
+                .package_wrap {
+                    .right {left: 0;}
+                }
+            }
+        }
+    }
+    // 하단영역
+    #footer {
+        > div {
+            .center {width: 95%;}
+        }
+        .f_top {
+            .f_menu {justify-content: center;} 
+        }
+        .f_bot {
+            .center {
+                flex-direction: column;
+                .left {width: 10%; margin: 5px 0 13px;}
+                .right {text-align: center;}
+            }
+        }
+    }
+    // 로그인 영역
+    #login {
+        // background-color: ;
+        .center {
+            width: 100%;
+            .login_wrap {
+                height: 100vh;
+                border-radius: 0;
+            }
+        }
+    }
+    // 회원가입 영역
+    #join {
+        .center {
+            width: 100%;
+            .join_wrap {
+                padding: 70px;
+            }
+        }
+    }
+    // 배너 영역
+    .banner.list {
+        .center {width: 90%;}
+    }
+    // 호텔페이지 where 영역
+    .where {
+        .center {width: 90%;}
+    }
+    // 호텔페이지 many_hotel 영역
+    .many_hotel {
+        .center {width: 90%;}
+    }
+    // 호텔페이지 notice 영역
+    .notice {
+        .center {width: 90%;}
+    }
+    // 목록페이지 영역
+    .travel_list {
+        .center {
+            width: 90%;
+            .wrap {
+                // ???????????
+                .list_wrap {width: 100% !important; margin-right: 0 !important;}
+                .ad_wrap{display: none;}
+            }
+        }
+    }
+    // 작성페이지 및 수정페이지 영역
+    .insert_wrap,.update_wrap {
+        .center {
+            width: 90%;
+        }
+    }
+}
