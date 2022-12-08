@@ -781,9 +781,7 @@
     .banner {
         background-color: orchid;
         display: flex; justify-content: center;
-        .center {
-            width: 37%;
-        }
+        .center {width: 37%;}
     }
     .banner.list {
         background-image: url("/img/banner01.jpg");
@@ -801,12 +799,8 @@
             .text_box {
                 color: #fff; background-color: rgba(0,0,0,0.4);
                 padding: 50px; border-radius: 10px;
-                .title {
-                    margin-bottom: 15px;
-                }
-                .subtitle {
-                    margin-bottom: 50px; line-height: 20px;
-                }
+                .title {margin-bottom: 15px;}
+                .subtitle {margin-bottom: 50px; line-height: 20px;}
                 .go_insert {
                     color: #fff; background-color: #399cd1;
                     display: inline-block; padding: 20px;
@@ -892,7 +886,7 @@
                 }
                 .ad_wrap {
                     position: sticky;
-                    margin-top: 85px;
+                    padding-top: 85px;
                     height: 620px;
                     width: 25%;
                     top: 0;
@@ -1265,6 +1259,262 @@
             }
         }
     }
+    // 해외패키지(서브페이지)
+    // 해외패키지 theme 영역
+    .theme {
+        display: flex; justify-content: center;
+        .center {
+            width: 57%;
+            .title {font-size: 23px; padding: 80px 0 30px;}
+            .theme_wrap {
+                display: flex; justify-content: space-between;
+                overflow: hidden;
+                .list {
+                    width: 21%; margin: 0 2%;
+                    height: 230px; border-radius: 50%;
+                    overflow: hidden; position: relative;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex; justify-content: center;
+                    align-items: center; text-align: center;
+                    transform: translateY(300%);
+                    &:nth-child(1){background-image: url(/img/sub_theme01.jpg);}
+                    &:nth-child(2){background-image: url(/img/sub_theme02.jpg);}
+                    &:nth-child(3){background-image: url(/img/sub_theme03.jpg);}
+                    &:nth-child(4){background-image: url(/img/sub_theme04.jpg);}
+                    a {
+                        color: #fff;
+                        .bg {
+                            position: absolute; width: 100%; height: 100%;
+                            background-color: rgba(0,0,0,0.1); left: 0; top: 0;
+                            z-index: 2;
+                        }
+                        .wrap {
+                            z-index: 3;
+                            p {font-size: 16px; padding-bottom: 22px;}
+                            .tag {font-size: 13px;}
+                        }
+                    }
+                    &:hover {transform: translateY(50%);}
+                }
+            }
+        }
+    }
+    // 해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+    .best,.hot_area,.family_tour {
+        display: flex; justify-content: center;
+        overflow: hidden;
+        .center {
+            width: 57%;
+            .title {font-size: 23px; padding: 80px 0 30px;}
+            .best_wrap,.area_wrap,.tour_wrap {
+                display: flex; justify-content: space-between;
+                flex-wrap: wrap;
+                .list {
+                    width: 23%; margin: 0 1%;
+                    transform: translateY(200%);
+                    > a {
+                        color: #000;
+                        img {width: 100%; height: 200px;}
+                        .best_title {
+                            padding: 19px 0 14px; font-size: 15px;
+                            line-height: 25px;
+                        }
+                        .text {
+                            padding-bottom: 25px; font-size: 14px; color: #8b8b8b;
+                            line-height: 23px; font-weight: 300;
+                        }
+                        .price {
+                            padding-bottom: 50px; font-size: 20px;
+                            font-weight: 700;
+                            span {font-size: 15px;}
+                        }
+                    }
+                    &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8) {
+                        display: none;
+                        .price {padding-bottom: 20px;}
+                    }
+                }
+                .more_btn {
+                    width: 180px; line-height: 38px;
+                    background-color: #049df7;
+                    display: block;
+                    text-align: center;
+                    margin: 10px auto 0;
+                    border-radius: 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .section.on {
+        .center {
+            //theme 영역
+            .theme_wrap {
+                .list {
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                    animation: list .7s ease-out 0s 1 normal forwards;
+                    @keyframes list {
+                        0% {transform: translateY(300%);}
+                        100% {transform: translateY(0%);}
+                    }
+                    &:nth-child(2){animation-delay: .2s;}
+                    &:nth-child(3){animation-delay: .4s;}
+                    &:nth-child(4){animation-delay: .6s;}
+                }
+            }
+            //해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+            .best_wrap,.area_wrap,.tour_wrap {
+                .list {
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                    animation: list .7s ease-out 0s 1 normal forwards;
+                    @keyframes list {
+                        0% {transform: translateY(200%);}
+                        100% {transform: translateY(0%);}
+                    }
+                    &:nth-child(2){animation-delay: .2s;}
+                    &:nth-child(3){animation-delay: .4s;}
+                    &:nth-child(4){animation-delay: .6s;}
+                }
+            }
+            .tour_wrap {
+                transform: translateY(0);   
+            }
+        }
+    }
+    // 해외패키지 bot_banner 영역
+    .bot_banner {
+        display: flex; justify-content: center;
+        .center {
+            width: 57%; height: 140px;
+            background-image: url(/img/bot_banner.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a {
+                color: #000; display: block;
+                width: 100%; height: 100%;
+                display: flex; align-items: center;
+                .text_box {
+                    padding-left: 70px;
+                    .t_text {
+                        font-size: 14px; padding-bottom: 16px;
+                        color: #34313a;
+                    }
+                    .b_text {
+                        font-size: 22px; color: #002665;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    // 해외패키지 package_tell 영역
+    .package_tell {
+        display: flex; justify-content: center;
+        .center {
+            width: 57%;
+            .title {font-size: 23px; padding: 80px 0 30px;}
+            .tell_box {
+                display: flex; border: 1px solid #e7e7e7;
+                background-color: #f8f8f8; padding: 36px 0 0 43px;
+                margin-bottom: 80px;
+                > div {width: 50%;}
+                > .left {
+                    display: flex;
+                    .left {
+                        i {margin-right: 15px;}
+                    }
+                    .right {
+                        .t_text {
+                            padding-bottom: 12px; font-size: 16px;
+                            span {
+                                color: #1e72ff; font-weight: 700;
+                                margin-left: 24px;
+                            }
+                        }
+                        .b_text {
+                            padding-bottom: 43px; font-size: 12px;
+                            color: #666;
+                            span {color: #1e72ff;}   
+                        }
+                    }
+                }
+                > .right {
+                    font-size: 16px;
+                    i {
+                        margin-right: 15px; transform: rotate(-45deg);
+                        font-size: 15px; position: relative; bottom: 3px;
+                    }
+                    span {font-size: 13px; color: #666;}
+                    .num {
+                        padding: 0 10px 0 25px; font-size: 15px;
+                        color: #1e72ff; font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    //항공페이지(서브페이지) 영역
+    //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
+    .air_sale,.hot_pick,.benefit {
+        display: flex; justify-content: center;
+        .center {
+            width: 57%;
+            .title {font-size: 23px; padding: 100px 0 30px;}
+            .sale_wrap,.pick_wrap,.benefit_wrap {
+                display: flex; justify-content: space-between;
+                .list {
+                    width: 23%; margin: 0 1%;
+                    > a {
+                        color: #000;
+                        img {width: 100%; height: 210px;}
+                        .text {
+                            padding: 20px 0 15px; font-size: 12px;
+                            color: #787f87;
+                        }
+                        .sub_title {
+                            font-size: 15px; padding-bottom: 16px; font-weight: 500;
+                            i {margin: 0 5px;}
+                        }
+                        .route,.date {
+                            font-size: 13px; padding-bottom: 25px;
+                            color: #566673;
+                            i {margin: 0 5px;}
+                        }
+                        .price {
+                            font-size: 19px; font-weight: 700;
+                            span {font-size: 16px; font-weight: 500;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //항공페이지 group 영역
+    .group {
+        display: flex; justify-content: center;
+        padding: 80px 0 180px;
+        .center {
+            width: 57%;
+            display: flex; justify-content: space-between;
+            .group_list {
+                width: 31.333%;
+                > a {
+                    color: #fff;
+                    background: #000; position: relative;
+                    display: block; width: 100%; height: 100%;
+                    img {
+                        width: 100%; position: absolute; left: 0; top: 0;
+                    }
+                    .text_box {
+                        position: absolute; left: 20px; top: 35px;
+                    }
+                }
+            }
+        }
+    }
 }
 //맨 위로 가게해주는 기능
 #go_top {
@@ -1314,7 +1564,7 @@
     .center {
         width: 30%;
         .login_wrap {
-            background-color: #7cbcef; border-radius: 10px;
+            background-color: #d9d9d9; border-radius: 10px;
             padding: 50px; box-sizing: border-box;
             color: #fff;
             // position: relative;
@@ -1365,21 +1615,19 @@
 #join {
     display: flex;
     justify-content: center; align-items: center;
-    background-color: #7cbcef;
+    background-color: #d9d9d9;
     .center {
         width: 50%;
         .join_wrap {
-            border-radius: 5px; color: #fff;
-            padding: 130px; box-sizing: border-box;
+            border-radius: 5px; color: #464952;
+            padding: 110px 0; box-sizing: border-box;
             // position: relative;
             .logo_wrap {
-                width: 23%; margin: 0 auto 16px;
-                // position: absolute; left: 50%; top: -50%;
-                // transform: translateX(-50%);
+                width: 12%; margin: 0 auto 16px;
                 img {width: 100%; height: 100%;border-radius: 50%;}
             }
             .text {
-                text-align: center; font-size: 55px;
+                text-align: center; font-size: 32px;
                 font-weight: 600; margin-bottom: 50px;
             }
         }

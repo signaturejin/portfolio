@@ -19,7 +19,6 @@
                 <div class="sub_popular_local">
                     <p class="subtitle">최근 <span>인기</span>많은 지역</p>
                     <div class="local_list_wrap">
-                        <!-- 나중에 반복문으로 만들어보기 -->
                         <a href="#">
                             <div class="local_list">
                                 <img class="local_bg" src="/img/jeju.jpg" alt="제주도 풍경 이미지입니다.">
@@ -292,9 +291,10 @@
             </div>
         </div>
     </div>
+    <!-- 하단 영역 -->
+    <%- include("common/footer.ejs"); %>
     <!-- 맨 위로 가는 기능 -->
     <%- include("common/go_top.ejs"); %>
-    <%- include("common/footer.ejs"); %>
     <!-- js -->
     <script src="/js/sub_more_hotel.js"></script>
 </body>

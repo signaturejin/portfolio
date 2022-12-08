@@ -49,9 +49,19 @@ app.get("/",function(req,res){
     });
 });
 
+//해외패키지(서브페이지) 경로 요청
+app.get("/package",(req,res)=>{
+    res.render("travel_package", {userData:req.user});
+});
+
 //호텔(서브페이지) 경로 요청
 app.get("/hotel",function(req,res){
     res.render("travel_hotel", {userData:req.user});
+});
+
+//항공(서브페이지) 경로 요청
+app.get("/air",(req,res)=>{
+    res.render("travel_air", {userData:req.user});
 });
 
 //나머지 서브페이지 경로 요청

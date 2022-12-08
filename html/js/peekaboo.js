@@ -2,6 +2,8 @@
 const section = document.querySelectorAll(".section");
 let secTop = [];
 
+console.log(section);
+
 // 스크롤 이벤트
 window.addEventListener("scroll",()=>{
     

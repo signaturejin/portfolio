@@ -33,10 +33,7 @@
                             flex-direction: column;
                             .phcheon_img {margin-right: 0;}
                             .text_box {
-                                .text1 {
-                                    text-align: center;
-                                    margin: 10px 0;
-                                }
+                                .text1 {text-align: center; margin: 10px 0;}
                             }
                         }
                     }
@@ -50,9 +47,7 @@
                 .bus_wrap {
                     transform: translateY(215%);
                     flex-wrap: wrap;
-                    .bus_box {
-                        width: 100%;
-                    }
+                    .bus_box {width: 100%;}
                 }
             }
         }
@@ -98,9 +93,7 @@
                 .sub_popular_local,.theme_hotel {
                     .local_list_wrap,.theme_list_wrap {
                         flex-direction: column;
-                        > a {
-                            width: 100%;
-                        }
+                        > a {width: 100%;}
                     }
                 }
             }
@@ -112,6 +105,47 @@
         // 호텔페이지 notice 영역
         .notice {
             .center {width: 95%;}
+        }
+        // 해외패키지 theme 영역
+        .theme {
+            .center {
+                width: 95%;
+                .theme_wrap {
+                    .list {margin: 0 auto;}
+                }
+            }
+        }
+        // 해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+        .best,.hot_area,.family_tour {
+            .center {
+                width: 95%;
+                .best_wrap,.area_wrap,.tour_wrap {
+                    flex-direction: column;
+                    .list {
+                        width: 90% !important;
+                        margin: 0 auto;
+                        img {height: 300px !important;}
+                    }
+                }
+            }
+        }
+        // 해외패키지 bot_banner 영역
+        .bot_banner {
+            .center {
+                width: 95%;
+                .text_box {padding-left: 30px !important;}
+            }
+        }
+        // 해외패키지 package_tell 영역
+        .package_tell {
+            .center {
+                width: 95%;
+                .tell_box {
+                    padding: 36px 22px !important;
+                    flex-direction: column;
+                    > div {width: 100% !important;}
+                }
+            }
         }
         // 목록페이지 영역
         .travel_list {

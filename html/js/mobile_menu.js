@@ -13,16 +13,10 @@ board_btn.addEventListener("click",()=>{
     mobile_board.style.right = "-100%";
 });
 
-//// test ////
-
 // 필요한 태그 생성
 const m_gnb_menu = document.querySelectorAll(".m_gnb_menu > li > a");
 const allow_icon = document.querySelectorAll(".m_gnb_menu > li > i");
 const m_sub_menu = document.querySelectorAll(".m_sub_menu");
-
-console.log(m_gnb_menu);
-console.log(allow_icon);
-console.log(m_sub_menu);
 
 let sub_height = [];
 // 모바일 서브 메뉴의 높이값 반복문 이용해서 대입

@@ -21,9 +21,7 @@
     #container {
         // 메인페이지 popular_local 영역
         .popular_local {
-            .center {
-                width: 85%;
-            }
+            .center {width: 85%;}
         }
         //메인페이지 tour_bus 영역
         .tour_bus {
@@ -32,9 +30,7 @@
                 .bus_wrap {
                     transform: translateY(-215%);
                     flex-wrap: wrap;
-                    .bus_box {
-                        width: 45%;
-                    }
+                    .bus_box {width: 45%;}
                 }
             }
         }
@@ -45,17 +41,13 @@
                 .bus_wrap {
                     transform: translateY(-215%);
                     flex-wrap: wrap;
-                    .bus_box {
-                        width: 45%;
-                    }
+                    .bus_box {width: 45%;}
                 }
             }
         }
         //메인페이지 local_count 영역
         .local_count {
-            .center {
-                width: 85%;
-            }
+            .center {width: 85%;}
         }
         //메인페이지 package 영역
         .package {
@@ -80,9 +72,7 @@
                             left: 0;
                             .box {
                                 width: 34.333%;
-                                &:last-child {
-                                    margin-right: 0;
-                                }
+                                &:last-child {margin-right: 0;}
                             }
                         }
                     }
@@ -130,9 +120,7 @@
                         flex-wrap: wrap;
                         > a {
                             width: 48%; margin: 1%;
-                            .local_list,.theme_list {
-                                height: 320px;
-                            }
+                            .local_list,.theme_list {height: 320px;}
                         }
                     }
                 }
@@ -146,15 +134,29 @@
         .notice {
             .center {width: 85%;}
         }
+        // 해외패키지 theme 영역
+        .theme {
+            .center {width: 85%;}
+        }
+        // 해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+        .best,.hot_area,.family_tour {
+            .center {width: 85%;}
+        }
+        // 해외패키지 bot_banner 영역
+        .bot_banner {
+            .center {width: 85%;}
+        }
+        // 해외패키지 package_tell 영역
+        .package_tell {
+            .center {width: 85%;}
+        }
         // 목록페이지 영역
         .travel_list {
             .center {width: 85%;}
         }
         // 작성페이지 및 수정페이지 영역
         .insert_wrap,.update_wrap {
-            .center {
-                width: 85%;
-            }
+            .center {width: 85%;}
         }
     }
 }

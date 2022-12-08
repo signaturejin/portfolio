@@ -155,12 +155,54 @@
     .notice {
         .center {width: 90%;}
     }
+    // 해외패키지 theme 영역
+    .theme {
+        .center {
+            width: 90%;
+            .theme_wrap {
+                flex-wrap: wrap !important;
+                .list {
+                    width: 46% !important;
+                    height: 280px !important;
+                    &:nth-child(1),&:nth-child(2) {
+                        margin-bottom: 50px !important;
+                    }
+                }
+            }
+        }
+    }
+    // 해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+    .best,.hot_area,.family_tour {
+        .center {
+            width: 90%;
+            .best_wrap,.area_wrap,.tour_wrap {
+                .list {width: 46% !important;}
+            }
+        }
+    }
+    // 해외패키지 bot_banner 영역
+    .bot_banner {
+        .center {
+            width: 90%;
+            .text_box {padding-left: 30px !important;}
+        }
+    }
+    // 해외패키지 package_tell 영역
+    .package_tell {
+        .center {
+            width: 90%;
+            .tell_box {
+                padding: 36px 22px !important;
+                flex-direction: column;
+                > div {width: 100% !important;}
+            }
+        }
+    }
     // 목록페이지 영역
     .travel_list {
         .center {
             width: 90%;
             .wrap {
-                // ???????????
                 .list_wrap {width: 100% !important; margin-right: 0 !important;}
                 .ad_wrap{display: none;}
             }
