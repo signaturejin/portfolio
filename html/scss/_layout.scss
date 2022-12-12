@@ -1344,42 +1344,8 @@
                     margin: 10px auto 0;
                     border-radius: 10px;
                     color: #fff;
+                    z-index: 99;
                 }
-            }
-        }
-    }
-    .section.on {
-        .center {
-            //theme 영역
-            .theme_wrap {
-                .list {
-                    // animation: name duration timing-function delay iteration-count direction fill-mode;
-                    animation: list .7s ease-out 0s 1 normal forwards;
-                    @keyframes list {
-                        0% {transform: translateY(300%);}
-                        100% {transform: translateY(0%);}
-                    }
-                    &:nth-child(2){animation-delay: .2s;}
-                    &:nth-child(3){animation-delay: .4s;}
-                    &:nth-child(4){animation-delay: .6s;}
-                }
-            }
-            //해외패키지 best 영역 / hot_area 영역 / family_tour 영역
-            .best_wrap,.area_wrap,.tour_wrap {
-                .list {
-                    // animation: name duration timing-function delay iteration-count direction fill-mode;
-                    animation: list .7s ease-out 0s 1 normal forwards;
-                    @keyframes list {
-                        0% {transform: translateY(200%);}
-                        100% {transform: translateY(0%);}
-                    }
-                    &:nth-child(2){animation-delay: .2s;}
-                    &:nth-child(3){animation-delay: .4s;}
-                    &:nth-child(4){animation-delay: .6s;}
-                }
-            }
-            .tour_wrap {
-                transform: translateY(0);   
             }
         }
     }
@@ -1456,17 +1422,55 @@
             }
         }
     }
+    .section.on {
+        .center {
+            //theme 영역
+            .theme_wrap {
+                .list {
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                    animation: list .7s ease-out 0s 1 normal forwards;
+                    @keyframes list {
+                        0% {transform: translateY(300%);}
+                        100% {transform: translateY(0%);}
+                    }
+                    &:nth-child(2){animation-delay: .2s;}
+                    &:nth-child(3){animation-delay: .4s;}
+                    &:nth-child(4){animation-delay: .6s;}
+                }
+            }
+            //해외패키지 best 영역 / hot_area 영역 / family_tour 영역
+            .best_wrap,.area_wrap,.tour_wrap {
+                .list {
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                    animation: list .7s ease-out 0s 1 normal forwards;
+                    @keyframes list {
+                        0% {transform: translateY(200%);}
+                        100% {transform: translateY(0%);}
+                    }
+                    &:nth-child(2){animation-delay: .2s;}
+                    &:nth-child(3){animation-delay: .4s;}
+                    &:nth-child(4){animation-delay: .6s;}
+                }
+            }
+            .tour_wrap {
+                transform: translateY(0);   
+            }
+        }
+    }
     //항공페이지(서브페이지) 영역
     //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
     .air_sale,.hot_pick,.benefit {
         display: flex; justify-content: center;
         .center {
-            width: 57%;
+            width: 57%; overflow: hidden;
             .title {font-size: 23px; padding: 100px 0 30px;}
             .sale_wrap,.pick_wrap,.benefit_wrap {
                 display: flex; justify-content: space-between;
+                transition: all 0.5s; transform: translateX(-130%);
                 .list {
                     width: 23%; margin: 0 1%;
+                    transition: all 0.5s;
+                    &:hover {transform: translateY(-20px);}
                     > a {
                         color: #000;
                         img {width: 100%; height: 210px;}
@@ -1495,7 +1499,7 @@
     //항공페이지 group 영역
     .group {
         display: flex; justify-content: center;
-        padding: 80px 0 180px;
+        padding: 80px 0 140px;
         .center {
             width: 57%;
             display: flex; justify-content: space-between;
@@ -1505,14 +1509,68 @@
                     color: #fff;
                     background: #000; position: relative;
                     display: block; width: 100%; height: 100%;
-                    img {
-                        width: 100%; position: absolute; left: 0; top: 0;
-                    }
+                    img {width: 100%; position: absolute; left: 0; top: 0;}
                     .text_box {
-                        position: absolute; left: 20px; top: 35px;
+                        position: absolute; left: 20px; top: 23px;
+                        .title {font-size: 19px; padding-bottom: 20px;}
+                        p {line-height: 22px; font-size: 13px;}
                     }
                 }
             }
+        }
+    }
+    //항공페이지 work_time 영역
+    .work_time {
+        display: flex; justify-content: center;
+        .center {
+            width: 57%; padding-bottom: 80px;
+            .title {font-size: 23px; padding: 100px 0 30px;}
+            .work_time_wrap {
+                display: flex; justify-content: space-between;
+                > .left {
+                    width: 58%; border: 1px solid #e6e6e6;
+                    background-color: #f8f8f8;
+                    box-sizing: border-box; display: flex;
+                    padding: 27px 0 36px;
+                    .icon {
+                        margin-left: 40px; transform: rotate(-45deg);
+                        position: relative; left: 6px; bottom: 9px;
+                        font-size: 19px;
+                    }
+                    .right {
+                        .top {
+                            p {
+                                font-size: 16px; font-weight: 500;
+                                padding-bottom: 18px;
+                                span {font-size: 14px; margin-left: 23px;}
+                            }
+                        }
+                        .bot {
+                            p {font-size: 13px; color: #6d6a65; line-height: 23px;}
+                        }
+                    }
+                }
+                > .right {
+                    width: 40%; border: 1px solid #e8e8e8;
+                    box-sizing: border-box; padding: 0 33px;
+                    a {
+                        display: block; width: 100%; height: 100%;
+                        display: flex; justify-content: space-between;
+                        align-items: center; color: #232c2b;
+                        .wrap {
+                            margin: 50px 0;
+                            i {margin-right: 10px;}
+                            span {font-size: 15px;}
+                        }
+                        > i {font-size: 20px; position: relative; top: 1px;}
+                    }
+                }
+            }
+        }
+    }
+    .section.on {
+        .center {
+            .sale_wrap,.pick_wrap,.benefit_wrap {transform: translate(0)}
         }
     }
 }

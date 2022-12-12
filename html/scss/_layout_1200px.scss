@@ -119,6 +119,30 @@
         .package_tell {
             .center {width: 78%;}
         }
+        //항공페이지(서브페이지) 영역
+        //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
+        .air_sale,.hot_pick,.benefit {
+            .center {width: 78%;}
+        }
+        //항공페이지 group 영역
+        .group {
+            .center {
+                width: 78%;
+                .group_list {
+                    width: 31.333%;
+                    > a {
+                        img {height: 130px;}
+                        .text_box {
+                            .title {font-size: 17px;}
+                        }
+                    }
+                }
+            }
+        }
+        //항공페이지 work_time 영역
+        .work_time {
+            .center {width: 78%;}
+        }
         // 목록페이지 영역
         .travel_list {
             .center {width: 78%;}

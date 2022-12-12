@@ -21,9 +21,7 @@
     #container {
         // 메인페이지 popular_local 영역
         .popular_local {
-            .center {
-                width: 90%;
-            }
+            .center {width: 90%;}
         }
         //메인페이지 local_video 영역
         .local_video {
@@ -42,9 +40,7 @@
                 .bus_wrap {
                     transform: translateY(-215%);
                     flex-wrap: wrap;
-                    .bus_box {
-                        width: 45%;
-                    }
+                    .bus_box {width: 45%;}
                 }
             }
         }
@@ -195,6 +191,55 @@
                 padding: 36px 22px !important;
                 flex-direction: column;
                 > div {width: 100% !important;}
+            }
+        }
+    }
+    //항공페이지(서브페이지) 영역
+    //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
+    .air_sale,.hot_pick,.benefit {
+        .center {
+            width: 90%;
+            .sale_wrap,.pick_wrap,.benefit_wrap {
+                flex-wrap: wrap;
+                .list {width: 48% !important; margin: 0 1% 30px !important;}
+            }
+        }
+    }
+    //항공페이지 group 영역
+    .group {
+        .center {
+            width: 90%;
+            flex-direction: column !important;
+            .group_list {
+                width: 100% !important;
+                > a {
+                    color: #fff;
+                    background: #000; position: relative;
+                    display: block; width: 100%; height: 100%;
+                    img {height: 160px !important;}
+                    .text_box {
+                        top: 39px !important;
+                        .title {font-size: 23px !important;}
+                        p {font-size: 14px !important;}
+                    }
+                }
+                &:nth-child(2) {margin-top: 180px;}
+                &:nth-child(3) {margin-top: 180px;}
+            }
+        }
+    }
+    //항공페이지 work_time 영역
+    .work_time {
+        .center {
+            width: 90%;
+            .work_time_wrap {
+                flex-direction: column;
+                > .left {
+                    width: 100% !important;
+                    margin-bottom: 30px;
+                    .icon {left: 0!important;}
+                }
+                > .right {width: 100% !important;}
             }
         }
     }

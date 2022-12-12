@@ -5,16 +5,9 @@
             .center {width: 85%;}
         }
         .h_bot {
-            .center {
-                height: 65px;
-                align-items: center;
-            }
-            .gnb {
-                display: none;
-            }
-            .mobile_menu {
-                display: block;
-            }
+            .center {height: 65px; align-items: center;}
+            .gnb {display: none;}
+            .mobile_menu {display: block;}
         }
     }
     // 중간영역
@@ -149,6 +142,37 @@
         // 해외패키지 package_tell 영역
         .package_tell {
             .center {width: 85%;}
+        }
+        //항공페이지(서브페이지) 영역
+        //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
+        .air_sale,.hot_pick,.benefit {
+            .center {width: 85%;}
+        }
+        //항공페이지 group 영역
+        .group {
+            .center {
+                width: 85%;
+                .group_list {
+                    > a {
+                        img {height: 130px;}
+                        .text_box {
+                            .title {font-size: 17px;}
+                        }
+                    }
+                }
+            }
+        }
+        //항공페이지 work_time 영역
+        .work_time {
+            .center {width: 85%;}
+        }
+        // 목록페이지 영역
+        .travel_list {
+            .center {width: 78%;}
+        }
+        // 작성페이지 및 수정페이지 영역
+        .insert_wrap,.update_wrap {
+            .center {width: 78%;}
         }
         // 목록페이지 영역
         .travel_list {

@@ -147,6 +147,29 @@
                 }
             }
         }
+        //항공페이지(서브페이지) 영역
+        //항공페이지 air_sale 영역 / hot_pick 영역 / benefit 영역
+        .air_sale,.hot_pick,.benefit {
+            .center {
+                width: 95%;
+                .sale_wrap,.pick_wrap,.benefit_wrap {
+                    .list {
+                        width: 100% !important;
+                        > a {
+                            img {height: 335px;}
+                        }
+                    }
+                }
+            }
+        }
+        //항공페이지 group 영역
+        .group {
+            .center {width: 95%;}
+        }
+        //항공페이지 work_time 영역
+        .work_time {
+            .center {width: 95%;}
+        }
         // 목록페이지 영역
         .travel_list {
             .center {

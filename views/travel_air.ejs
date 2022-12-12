@@ -15,7 +15,7 @@
     <div id="container">
         <div class="air">
             <!-- air_sale 영역 -->
-            <div class="air_sale">
+            <div class="air_sale section">
                 <div class="center">
                     <h2 class="title">항공사 추천 특가</h2>
                     <div class="sale_wrap">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <!-- hot_pick 영역 -->
-            <div class="hot_pick">
+            <div class="hot_pick section">
                 <div class="center">
                     <h2 class="title">Hot Pick 국내 항공 특가</h2>
                     <div class="pick_wrap">
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <!-- benefit 영역 -->
-            <div class="benefit">
+            <div class="benefit section">
                 <div class="center">
                     <h2 class="title">동글투어만의 특별한 혜택!</h2>
                     <div class="benefit_wrap">
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <!-- group 영역 -->
-            <div class="group">
+            <div class="group section">
                 <div class="center">
                     <div class="group_list">
                         <a href="#">
@@ -170,11 +170,41 @@
                     </div>
                 </div>
             </div>
+            <!-- work_time 영역 -->
+            <div class="work_time">
+                <div class="center">
+                    <h2 class="title">하나투어닷컴 항공 업무 시간 안내</h2>
+                    <div class="work_time_wrap">
+                        <div class="left">
+                            <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="right">
+                                <div class="top">
+                                    <p>고객님을 위한 1:1 문의 상담 가능 시간<span>평일 9:00 ~ 17:00</span></p>
+                                </div>
+                                <div class="bot">
+                                    <p>※ 주말 및 공휴일은 변경/취소/환불 등 직원 확인이 필요한 업무는 처리가 불가합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="#">
+                                <div class="wrap">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <span>자주하는 문의 FAQ 바로가기</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 하단 영역 -->
     <%- include("common/footer.ejs"); %>
     <!-- 맨 위로 가는 기능 -->
     <%- include("common/go_top.ejs"); %>
+    <!-- js -->
+    <script src="/js/peekaboo.js"></script>
 </body>
 </html>
