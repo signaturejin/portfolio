@@ -237,7 +237,7 @@ body::-webkit-scrollbar-track {
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 15px;
   margin-bottom: 80px;
 }
 #header .mobile_board .m_top .m_login {
@@ -253,7 +253,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
 }
 #header .mobile_board .m_gnb_menu > li {
-  font-size: 25px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 #header .mobile_board .m_gnb_menu > li > a {
@@ -1250,7 +1250,7 @@ body::-webkit-scrollbar-track {
 #container .detail_page .center .detail_wrap .com_wrap .com_insert {
   margin-top: 40px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .comment {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .comment {
   width: 100%;
   height: 100px;
   padding: 12px;
@@ -1258,12 +1258,12 @@ body::-webkit-scrollbar-track {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .btn_wrap {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0 50px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .btn_wrap #com_btn {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
   width: 7%;
   height: 30px;
   border: none;
@@ -2634,6 +2634,15 @@ body::-webkit-scrollbar-track {
   #container .section.on .center .package_wrap .right {
     left: 0;
   }
+  #container .detail_page .center {
+    width: 90%;
+  }
+  #container .detail_page .center .detail_wrap .detail_bot {
+    flex-direction: column;
+  }
+  #container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
+    width: 100% !important;
+  }
   #footer > div .center {
     width: 95%;
   }
@@ -2975,6 +2984,9 @@ body::-webkit-scrollbar-track {
     font-size: 15px;
     line-height: 18px;
   }
+  #container .travel_list .center {
+    padding: 50px 0;
+  }
   #container .many_hotel .center .hotel_box_wrap {
     flex-direction: column;
   }
@@ -2986,15 +2998,6 @@ body::-webkit-scrollbar-track {
   }
   #container .notice .center .notice_wrap a .notice_box p {
     font-size: 13px;
-  }
-  #container .detail_page .center {
-    width: 90%;
-  }
-  #container .detail_page .center .detail_wrap .detail_bot {
-    flex-direction: column;
-  }
-  #container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
-    width: 100% !important;
   }
   #footer .f_top .f_menu li a {
     font-size: 10px !important;

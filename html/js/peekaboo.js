@@ -35,8 +35,8 @@ window.addEventListener("scroll",()=>{
         if(ViewWidth <= 430){
             item.classList.add("on");
         }
-        else {
-            item.classList.remove("on");
-        }
+        // else {
+        //     item.classList.remove("on");
+        // }
     });
 });

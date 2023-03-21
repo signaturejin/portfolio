@@ -46,6 +46,11 @@
                 }
             }
         }
+        .travel_list {
+            .center {
+                padding: 50px 0;
+            }
+        }
         // 서브페이지 호텔 영역
         .many_hotel {
             .center {
@@ -68,26 +73,26 @@
             }
         }
         // 서브페이지 커뮤니티 디테일
-        .detail_page {
-            .center {
-                width: 90%;
-                .detail_wrap {
-                    .detail_bot {
-                        flex-direction: column;
-                    }
-                    // 댓글 css
-                    .com_wrap {
-                        .com_insert {
-                            #com_form {
-                                .btn_wrap {
-                                    #com_btn {width: 100% !important;}
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // .detail_page {
+        //     .center {
+        //         width: 90%;
+        //         .detail_wrap {
+        //             .detail_bot {
+        //                 flex-direction: column;
+        //             }
+        //             // 댓글 css
+        //             .com_wrap {
+        //                 .com_insert {
+        //                     #com_form {
+        //                         .btn_wrap {
+        //                             #com_btn {width: 100% !important;}
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
     // 하단영역
     #footer {
