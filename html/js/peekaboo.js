@@ -1,8 +1,8 @@
 // 필요한 태그 생성
 const section = document.querySelectorAll(".section");
 let secTop = [];
+// console.log(section);
 
-console.log(section);
 
 // 스크롤 이벤트
 window.addEventListener("scroll",()=>{
@@ -25,4 +25,18 @@ window.addEventListener("scroll",()=>{
     });
     
 
+    //만약 화면이 430px 이하라면 그냥 on 붙여놓기
+    //현재 화면크기값 가져옴
+    let ViewWidth = document.body.offsetWidth;
+
+    //반복문으로 모든 구간에 클래스 on 붙이기
+    section.forEach((item,index)=>{
+        //430 <= 화면크기
+        if(ViewWidth <= 430){
+            item.classList.add("on");
+        }
+        else {
+            item.classList.remove("on");
+        }
+    });
 });

@@ -49,16 +49,51 @@ window.addEventListener("scroll",()=>{
     // 도달 구간의 위치값을 변수에 담아줌
     let target = document.querySelector(".local_count").offsetTop;
 
-    // 조건문을 사용하여 현재 위치값이 도달 구간의 위치값과 크거나 같을 때 카운트 시작
-    if(scTop >= target - 180){
-        if(stop == true){
-            // 반복문을 사용하여 배열객체 모두를 대상으로 삼음
-            countList.forEach((item,index)=>{
-                count(item.inc,item.com,item.tag,item.speed);
-            });
+    // 화면 크기 변수에 담아줌
+    let ViewWidth = document.body.offsetWidth;
+
+    //만약 화면크기가 430과 같거나 작다면 target - 0
+    if(ViewWidth <= 430){
+        // 조건문을 사용하여 현재 위치값이 도달 구간의 위치값과 크거나 같을 때 카운트 시작
+        if(scTop >= target - 800){
+            if(stop == true){
+                // 반복문을 사용하여 배열객체 모두를 대상으로 삼음
+                countList.forEach((item,index)=>{
+                    count(item.inc,item.com,item.tag,item.speed);
+                });
+            }
         }
     }
+    else {
+        if(scTop >= target - 180){
+            if(stop == true){
+                // 반복문을 사용하여 배열객체 모두를 대상으로 삼음
+                countList.forEach((item,index)=>{
+                    count(item.inc,item.com,item.tag,item.speed);
+                });
+            }
+        }
+    }
+
 });
+
+// 스크롤 이벤트를 사용하여 해당 구간 도달하였을 때 카운트 실행
+// window.addEventListener("scroll",()=>{
+//     // 스크롤의 위치값을 변수에 담아줌
+//     let scTop = window.scrollY;
+//     // 도달 구간의 위치값을 변수에 담아줌
+//     let target = document.querySelector(".local_count").offsetTop;
+
+//     // 조건문을 사용하여 현재 위치값이 도달 구간의 위치값과 크거나 같을 때 카운트 시작
+//     if(scTop >= target - 180){
+//         if(stop == true){
+//             // 반복문을 사용하여 배열객체 모두를 대상으로 삼음
+//             countList.forEach((item,index)=>{
+//                 count(item.inc,item.com,item.tag,item.speed);
+//             });
+//         }
+//     }
+// });
 
 // 자동함수 이용하여 카운팅
 let count = (inc,com,tag,speed)=>{

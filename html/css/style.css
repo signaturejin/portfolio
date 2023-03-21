@@ -191,7 +191,7 @@ body::-webkit-scrollbar-track {
   position: absolute;
   top: 0;
   right: -120%;
-  width: 500px;
+  width: 320px;
   height: 100vh;
   padding: 20px 35px;
   box-sizing: border-box;
@@ -1077,6 +1077,9 @@ body::-webkit-scrollbar-track {
 #container .travel_list .center .wrap .list_wrap .list_box .left .user_title a {
   color: #000000;
 }
+#container .travel_list .center .wrap .list_wrap .list_box .left .user_title:hover a {
+  color: #3884fd;
+}
 #container .travel_list .center .wrap .list_wrap .list_box .left .user_context {
   font-size: 16px;
   line-height: 22px;
@@ -1247,7 +1250,7 @@ body::-webkit-scrollbar-track {
 #container .detail_page .center .detail_wrap .com_wrap .com_insert {
   margin-top: 40px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .comment {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .comment {
   width: 100%;
   height: 100px;
   padding: 12px;
@@ -1255,12 +1258,12 @@ body::-webkit-scrollbar-track {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .btn_wrap {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0 50px;
 }
-#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
+#container .detail_page .center .detail_wrap .com_wrap .com_insert #com_insert .btn_wrap #com_btn {
   width: 7%;
   height: 30px;
   border: none;
@@ -2939,5 +2942,64 @@ body::-webkit-scrollbar-track {
   }
   #container .insert_wrap .center #insert_form .name_box .name, #container .insert_wrap .center #update_form .name_box .name, #container .update_wrap .center #insert_form .name_box .name, #container .update_wrap .center #update_form .name_box .name {
     width: 60%;
+  }
+}
+@media screen and (max-width: 430px) {
+  #header .h_top .center {
+    flex-direction: column;
+    display: none;
+  }
+  #header .h_top .center .sns {
+    margin-right: 0;
+    text-align: center;
+  }
+  #header .h_top .center .right_box {
+    margin-left: 0;
+  }
+  #header .h_bot .logo a img {
+    width: 55%;
+    height: 55%;
+  }
+  #header .mobile_board .m_top {
+    font-size: 15px;
+  }
+  #header .mobile_board .m_gnb_menu > li {
+    font-size: 18px;
+  }
+  #container .slide .view .slide_box .text_box .slide_title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  #container .slide .view .slide_box .text_box .sub_text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #container .many_hotel .center .hotel_box_wrap {
+    flex-direction: column;
+  }
+  #container .many_hotel .center .hotel_box_wrap .hotel_box {
+    width: 100%;
+  }
+  #container .notice .center .notice_wrap a .notice_box span {
+    font-size: 32px;
+  }
+  #container .notice .center .notice_wrap a .notice_box p {
+    font-size: 13px;
+  }
+  #container .detail_page .center {
+    width: 90%;
+  }
+  #container .detail_page .center .detail_wrap .detail_bot {
+    flex-direction: column;
+  }
+  #container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
+    width: 100% !important;
+  }
+  #footer .f_top .f_menu li a {
+    font-size: 10px !important;
+  }
+  #footer .f_bot .center .right {
+    font-size: 10px;
   }
 }

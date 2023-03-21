@@ -1,0 +1,107 @@
+@media screen and (max-width: 430px) {
+    // 상단영역
+    #header {
+        .h_top {
+            .center {
+                flex-direction: column;
+                display: none;
+                // .right_box {display: none;}
+                .sns {margin-right: 0; text-align: center;}
+                .right_box {margin-left: 0;}
+            }
+        }
+        .h_bot {
+            .logo {
+                a {
+                    img {width: 55%; height: 55%;}
+                }
+            }
+        }
+        // 모바일 보드판
+        .mobile_board {
+            .m_top {
+                font-size: 15px;
+            }
+            .m_gnb_menu {
+                > li {font-size: 18px;}
+            }
+        }
+    }
+    // 중간영역
+    #container {
+        .slide {
+            .view {
+                .slide_box {
+                    .text_box {
+                        .slide_title {
+                            font-size: 20px;
+                            line-height: 30px;
+                            margin-bottom: 10px;
+                        }
+                        .sub_text {
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        // 서브페이지 호텔 영역
+        .many_hotel {
+            .center {
+                .hotel_box_wrap {
+                    flex-direction: column;
+                    .hotel_box {width: 100%;}
+                }
+            }
+        }
+        .notice {
+            .center {
+                .notice_wrap {
+                    a {
+                        .notice_box {
+                            span {font-size: 32px;}
+                            p {font-size: 13px;}
+                        }
+                    }
+                }
+            }
+        }
+        // 서브페이지 커뮤니티 디테일
+        .detail_page {
+            .center {
+                width: 90%;
+                .detail_wrap {
+                    .detail_bot {
+                        flex-direction: column;
+                    }
+                    // 댓글 css
+                    .com_wrap {
+                        .com_insert {
+                            #com_form {
+                                .btn_wrap {
+                                    #com_btn {width: 100% !important;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 하단영역
+    #footer {
+        .f_top {
+            .f_menu {
+                li {
+                    a {font-size: 10px !important;}
+                }
+            } 
+        }
+        .f_bot {
+            .center {
+                .right {font-size: 10px;}
+            } 
+        }
+    }
+}
