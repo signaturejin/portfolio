@@ -4,13 +4,19 @@ const mobile_board = document.querySelector(".mobile_board");
 const board_btn = document.querySelector(".board_btn");
 
 mobile_menu.addEventListener("click",()=>{
+
+    mobile_board.style.display = "block";
+
     mobile_menu.classList.add("on");
     mobile_board.style.right = "0";
 });
 
 board_btn.addEventListener("click",()=>{
+    
     mobile_menu.classList.remove("on");
     mobile_board.style.right = "-100%";
+    
+    mobile_board.style.display = "none";
 });
 
 // 필요한 태그 생성

@@ -30,6 +30,7 @@ textarea {
 body {
   line-height: 1;
   overflow-x: hidden;
+  overflow-y: auto;
   font-family: "Noto Sans", sans-serif;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -190,7 +191,7 @@ body::-webkit-scrollbar-track {
 #header .mobile_board {
   position: absolute;
   top: 0;
-  right: -120%;
+  right: -100%;
   width: 320px;
   height: 100vh;
   padding: 20px 35px;
@@ -199,6 +200,7 @@ body::-webkit-scrollbar-track {
   transition: all 0.5s;
   background-color: #2c94d9;
   color: #fff;
+  display: none;
 }
 #header .mobile_board .btn_wrap {
   display: flex;
@@ -2033,6 +2035,7 @@ body::-webkit-scrollbar-track {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 99;
   cursor: pointer;
 }
 
@@ -2329,6 +2332,7 @@ body::-webkit-scrollbar-track {
   }
   #container .tour_bus .center .bus_wrap .bus_box {
     width: 45%;
+    margin-bottom: 60px;
   }
   #container .local_count .center {
     width: 78%;
@@ -2347,6 +2351,11 @@ body::-webkit-scrollbar-track {
   }
   #container .comp_map .center {
     width: 78%;
+  }
+  #container .comp_map .center .call span {
+    display: block;
+    padding-top: 8px;
+    font-size: 17px;
   }
   #container .banner.list .center {
     width: 78%;
@@ -2374,6 +2383,12 @@ body::-webkit-scrollbar-track {
   #container .best .center, #container .hot_area .center, #container .family_tour .center {
     width: 78%;
   }
+  #container .best .center .best_wrap .list, #container .best .center .area_wrap .list, #container .best .center .tour_wrap .list, #container .hot_area .center .best_wrap .list, #container .hot_area .center .area_wrap .list, #container .hot_area .center .tour_wrap .list, #container .family_tour .center .best_wrap .list, #container .family_tour .center .area_wrap .list, #container .family_tour .center .tour_wrap .list {
+    width: 48%;
+  }
+  #container .best .center .best_wrap .list a img, #container .best .center .area_wrap .list a img, #container .best .center .tour_wrap .list a img, #container .hot_area .center .best_wrap .list a img, #container .hot_area .center .area_wrap .list a img, #container .hot_area .center .tour_wrap .list a img, #container .family_tour .center .best_wrap .list a img, #container .family_tour .center .area_wrap .list a img, #container .family_tour .center .tour_wrap .list a img {
+    height: 255px;
+  }
   #container .bot_banner .center {
     width: 78%;
   }
@@ -2383,17 +2398,50 @@ body::-webkit-scrollbar-track {
   #container .air_sale .center, #container .hot_pick .center, #container .benefit .center {
     width: 78%;
   }
+  #container .air_sale .center .sale_wrap, #container .air_sale .center .pick_wrap, #container .air_sale .center .benefit_wrap, #container .hot_pick .center .sale_wrap, #container .hot_pick .center .pick_wrap, #container .hot_pick .center .benefit_wrap, #container .benefit .center .sale_wrap, #container .benefit .center .pick_wrap, #container .benefit .center .benefit_wrap {
+    flex-wrap: wrap;
+  }
+  #container .air_sale .center .sale_wrap .list, #container .air_sale .center .pick_wrap .list, #container .air_sale .center .benefit_wrap .list, #container .hot_pick .center .sale_wrap .list, #container .hot_pick .center .pick_wrap .list, #container .hot_pick .center .benefit_wrap .list, #container .benefit .center .sale_wrap .list, #container .benefit .center .pick_wrap .list, #container .benefit .center .benefit_wrap .list {
+    width: 48%;
+  }
+  #container .air_sale .center .sale_wrap .list a img, #container .air_sale .center .pick_wrap .list a img, #container .air_sale .center .benefit_wrap .list a img, #container .hot_pick .center .sale_wrap .list a img, #container .hot_pick .center .pick_wrap .list a img, #container .hot_pick .center .benefit_wrap .list a img, #container .benefit .center .sale_wrap .list a img, #container .benefit .center .pick_wrap .list a img, #container .benefit .center .benefit_wrap .list a img {
+    height: 255px;
+  }
+  #container .air_sale .center .sale_wrap .list a .price, #container .air_sale .center .sale_wrap .list a .sub_title, #container .air_sale .center .pick_wrap .list a .price, #container .air_sale .center .pick_wrap .list a .sub_title, #container .air_sale .center .benefit_wrap .list a .price, #container .air_sale .center .benefit_wrap .list a .sub_title, #container .hot_pick .center .sale_wrap .list a .price, #container .hot_pick .center .sale_wrap .list a .sub_title, #container .hot_pick .center .pick_wrap .list a .price, #container .hot_pick .center .pick_wrap .list a .sub_title, #container .hot_pick .center .benefit_wrap .list a .price, #container .hot_pick .center .benefit_wrap .list a .sub_title, #container .benefit .center .sale_wrap .list a .price, #container .benefit .center .sale_wrap .list a .sub_title, #container .benefit .center .pick_wrap .list a .price, #container .benefit .center .pick_wrap .list a .sub_title, #container .benefit .center .benefit_wrap .list a .price, #container .benefit .center .benefit_wrap .list a .sub_title {
+    padding-bottom: 50px;
+  }
   #container .group .center {
     width: 78%;
+    flex-direction: column !important;
   }
   #container .group .center .group_list {
-    width: 31.333%;
+    width: 100% !important;
+  }
+  #container .group .center .group_list > a {
+    color: #fff;
+    background: #000;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
   #container .group .center .group_list > a img {
-    height: 130px;
+    height: 160px !important;
+  }
+  #container .group .center .group_list > a .text_box {
+    top: 39px !important;
   }
   #container .group .center .group_list > a .text_box .title {
-    font-size: 17px;
+    font-size: 23px !important;
+  }
+  #container .group .center .group_list > a .text_box p {
+    font-size: 14px !important;
+  }
+  #container .group .center .group_list:nth-child(2) {
+    margin-top: 180px;
+  }
+  #container .group .center .group_list:nth-child(3) {
+    margin-top: 180px;
   }
   #container .work_time .center {
     width: 78%;
@@ -2722,45 +2770,11 @@ body::-webkit-scrollbar-track {
   .air_sale .center, .hot_pick .center, .benefit .center {
     width: 90%;
   }
-  .air_sale .center .sale_wrap, .air_sale .center .pick_wrap, .air_sale .center .benefit_wrap, .hot_pick .center .sale_wrap, .hot_pick .center .pick_wrap, .hot_pick .center .benefit_wrap, .benefit .center .sale_wrap, .benefit .center .pick_wrap, .benefit .center .benefit_wrap {
-    flex-wrap: wrap;
-  }
   .air_sale .center .sale_wrap .list, .air_sale .center .pick_wrap .list, .air_sale .center .benefit_wrap .list, .hot_pick .center .sale_wrap .list, .hot_pick .center .pick_wrap .list, .hot_pick .center .benefit_wrap .list, .benefit .center .sale_wrap .list, .benefit .center .pick_wrap .list, .benefit .center .benefit_wrap .list {
-    width: 48% !important;
     margin: 0 1% 30px !important;
   }
   .group .center {
     width: 90%;
-    flex-direction: column !important;
-  }
-  .group .center .group_list {
-    width: 100% !important;
-  }
-  .group .center .group_list > a {
-    color: #fff;
-    background: #000;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .group .center .group_list > a img {
-    height: 160px !important;
-  }
-  .group .center .group_list > a .text_box {
-    top: 39px !important;
-  }
-  .group .center .group_list > a .text_box .title {
-    font-size: 23px !important;
-  }
-  .group .center .group_list > a .text_box p {
-    font-size: 14px !important;
-  }
-  .group .center .group_list:nth-child(2) {
-    margin-top: 180px;
-  }
-  .group .center .group_list:nth-child(3) {
-    margin-top: 180px;
   }
   .work_time .center {
     width: 90%;
@@ -2998,6 +3012,19 @@ body::-webkit-scrollbar-track {
   }
   #container .notice .center .notice_wrap a .notice_box p {
     font-size: 13px;
+  }
+  #container .work_time .center .work_time_wrap .left .right .top p span {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+  #container .insert_wrap .center #insert_form .insert_top, #container .insert_wrap .center #insert_form .update_top, #container .insert_wrap .center #update_form .insert_top, #container .insert_wrap .center #update_form .update_top, #container .update_wrap .center #insert_form .insert_top, #container .update_wrap .center #insert_form .update_top, #container .update_wrap .center #update_form .insert_top, #container .update_wrap .center #update_form .update_top {
+    flex-direction: column;
+  }
+  #container .insert_wrap .center #insert_form .insert_top .name_box, #container .insert_wrap .center #insert_form .update_top .name_box, #container .insert_wrap .center #update_form .insert_top .name_box, #container .insert_wrap .center #update_form .update_top .name_box, #container .update_wrap .center #insert_form .insert_top .name_box, #container .update_wrap .center #insert_form .update_top .name_box, #container .update_wrap .center #update_form .insert_top .name_box, #container .update_wrap .center #update_form .update_top .name_box {
+    width: 100%;
+  }
+  #container .insert_wrap .center #insert_form .insert_top .name_box .name_text, #container .insert_wrap .center #insert_form .update_top .name_box .name_text, #container .insert_wrap .center #update_form .insert_top .name_box .name_text, #container .insert_wrap .center #update_form .update_top .name_box .name_text, #container .update_wrap .center #insert_form .insert_top .name_box .name_text, #container .update_wrap .center #insert_form .update_top .name_box .name_text, #container .update_wrap .center #update_form .insert_top .name_box .name_text, #container .update_wrap .center #update_form .update_top .name_box .name_text {
+    width: 20%;
   }
   #footer .f_top .f_menu li a {
     font-size: 10px !important;

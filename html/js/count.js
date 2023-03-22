@@ -55,7 +55,7 @@ window.addEventListener("scroll",()=>{
     //만약 화면크기가 430과 같거나 작다면 target - 0
     if(ViewWidth <= 430){
         // 조건문을 사용하여 현재 위치값이 도달 구간의 위치값과 크거나 같을 때 카운트 시작
-        if(scTop >= target - 1500){
+        if(scTop >= target - 150){
             if(stop == true){
                 // 반복문을 사용하여 배열객체 모두를 대상으로 삼음
                 countList.forEach((item,index)=>{

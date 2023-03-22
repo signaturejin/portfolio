@@ -93,6 +93,36 @@
         //         }
         //     }
         // }
+        // 서브페이지 항공 영역
+        .work_time {
+            .center {
+                .work_time_wrap {
+                    .left {
+                        .right {
+                            .top {
+                                p {
+                                    span {display: block; margin: 5px 0 0 0;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 서브페이지 커뮤니티 수정 및 삭제 영역
+        .insert_wrap,.update_wrap {
+            .center {
+                #insert_form,#update_form {
+                    .insert_top,.update_top {
+                        flex-direction: column;
+                        .name_box {
+                            width: 100%;
+                            .name_text {width: 20%;}
+                        }
+                    }
+                }
+            }
+        }
     }
     // 하단영역
     #footer {
@@ -101,7 +131,7 @@
                 li {
                     a {font-size: 10px !important;}
                 }
-            } 
+            }  
         }
         .f_bot {
             .center {
