@@ -3,6 +3,27 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #217af4;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(33, 122, 244, 0.1);
+}
+
 ul, ol, li {
   list-style: none;
 }
@@ -25,24 +46,6 @@ input, select, textarea {
 
 textarea {
   resize: none;
-}
-
-body {
-  line-height: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  font-family: "Noto Sans", sans-serif;
-  font-family: "Noto Sans KR", sans-serif;
-}
-body::-webkit-scrollbar {
-  width: 8px;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #217af4;
-  border-radius: 10px;
-}
-body::-webkit-scrollbar-track {
-  background-color: rgba(33, 122, 244, 0.1);
 }
 
 #header {
@@ -200,7 +203,6 @@ body::-webkit-scrollbar-track {
   transition: all 0.5s;
   background-color: #2c94d9;
   color: #fff;
-  display: none;
 }
 #header .mobile_board .btn_wrap {
   display: flex;
@@ -2970,18 +2972,19 @@ body::-webkit-scrollbar-track {
 @media screen and (max-width: 430px) {
   #header .h_top .center {
     flex-direction: column;
-    display: none;
   }
   #header .h_top .center .sns {
-    margin-right: 0;
     text-align: center;
   }
+  #header .h_top .center .sns li {
+    margin: 10px 15px;
+  }
   #header .h_top .center .right_box {
-    margin-left: 0;
+    display: none;
   }
   #header .h_bot .logo a img {
-    width: 55%;
-    height: 55%;
+    width: 60%;
+    height: 60%;
   }
   #header .mobile_board .m_top {
     font-size: 15px;

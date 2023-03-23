@@ -4,16 +4,17 @@
         .h_top {
             .center {
                 flex-direction: column;
-                display: none;
-                // .right_box {display: none;}
-                .sns {margin-right: 0; text-align: center;}
-                .right_box {margin-left: 0;}
+                .sns {
+                    text-align: center;
+                    li {margin: 10px 15px;}
+                }
+                .right_box {display: none;}
             }
         }
         .h_bot {
             .logo {
                 a {
-                    img {width: 55%; height: 55%;}
+                    img {width: 60%; height: 60%;}
                 }
             }
         }

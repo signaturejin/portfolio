@@ -1,14 +1,10 @@
 * {margin: 0; padding: 0;}
-ul,ol,li {list-style: none;}
-a {text-decoration: none;}
-img,video {vertical-align: middle;}
-table {border-collapse: collapse;}
-input,select,textarea {outline: 0;}
-textarea {resize: none;}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     line-height: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
     // 스크롤바
@@ -25,3 +21,9 @@ body {
         background-color: rgba(33,122,244,0.1);
     }
 }
+ul,ol,li {list-style: none;}
+a {text-decoration: none;}
+img,video {vertical-align: middle;}
+table {border-collapse: collapse;}
+input,select,textarea {outline: 0;}
+textarea {resize: none;}
