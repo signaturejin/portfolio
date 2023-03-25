@@ -4,6 +4,16 @@
         > div {
             .center {width: 90%;}
         }
+        .h_top {
+            .center {
+                flex-direction: column;
+                .sns {
+                    text-align: center;
+                    li {margin: 10px 15px;}
+                }
+                .right_box {display: none;}
+            }
+        }
         .h_bot {
             .center {
                 height: 65px;

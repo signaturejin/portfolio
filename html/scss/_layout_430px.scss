@@ -1,16 +1,6 @@
 @media screen and (max-width: 430px) {
     // 상단영역
     #header {
-        .h_top {
-            .center {
-                flex-direction: column;
-                .sns {
-                    text-align: center;
-                    li {margin: 10px 15px;}
-                }
-                .right_box {display: none;}
-            }
-        }
         .h_bot {
             .logo {
                 a {
@@ -73,27 +63,6 @@
                 }
             }
         }
-        // 서브페이지 커뮤니티 디테일
-        // .detail_page {
-        //     .center {
-        //         width: 90%;
-        //         .detail_wrap {
-        //             .detail_bot {
-        //                 flex-direction: column;
-        //             }
-        //             // 댓글 css
-        //             .com_wrap {
-        //                 .com_insert {
-        //                     #com_form {
-        //                         .btn_wrap {
-        //                             #com_btn {width: 100% !important;}
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
         // 서브페이지 항공 영역
         .work_time {
             .center {
