@@ -17,15 +17,9 @@
                 <div class="slide_box">
                     <div class="bg"></div>
                     <div class="text_box">
-                        <h2 class="slide_title">
-                            꿈꾸던 여행지!
-                        </h2>
-                        <p class="sub_text">
-                            힐링할 수 있도록 돕겠습니다.
-                        </p>
-                        <div class="slide_btn">
-                            <a href="#">바로가기</a>
-                        </div>
+                        <h2 class="slide_title">꿈꾸던 여행지!</h2>
+                        <p class="sub_text">힐링할 수 있도록 돕겠습니다.</p>
+                        <div class="slide_btn"><a href="#">바로가기</a></div>
                     </div>
                 </div>
                 <div class="slide_box">
@@ -33,12 +27,8 @@
                     <div class="text_box">
                         <div class="bg_wrap">
                             <h2 class="slide_title">청량감이 느껴지는 곳</h2>
-                            <p class="sub_text">
-                                푸른 자연이 함께합니다.
-                            </p>
-                            <div class="slide_btn">
-                                <a href="#">바로가기</a>
-                            </div>
+                            <p class="sub_text">푸른 자연이 함께합니다.</p>
+                            <div class="slide_btn"><a href="#">바로가기</a></div>
                         </div>
                     </div>
                 </div>
@@ -46,24 +36,16 @@
                     <div class="bg"></div>
                     <div class="text_box">
                         <h2 class="slide_title">한옥마을이 궁금하다면!</h2>
-                        <p class="sub_text">
-                            역사의 깊이를 느낄 수 있습니다.
-                        </p>
-                        <div class="slide_btn">
-                            <a href="#">바로가기</a>
-                        </div>
+                        <p class="sub_text">역사의 깊이를 느낄 수 있습니다.</p>
+                        <div class="slide_btn"><a href="#">바로가기</a></div>
                     </div>
                 </div>
                 <div class="slide_box">
                     <div class="bg"></div>
                     <div class="text_box">
                         <h2 class="slide_title">산 속 호텔 캠핑!</h2>
-                        <p class="sub_text">
-                            맑은 공기가 개운합니다.
-                        </p>
-                        <div class="slide_btn">
-                            <a href="#">바로가기</a>
-                        </div>
+                        <p class="sub_text">맑은 공기가 개운합니다.</p>
+                        <div class="slide_btn"><a href="#">바로가기</a></div>
                     </div>
                 </div>
             </div>
@@ -91,14 +73,14 @@
                     <% for(let i=0; i<popular_list.length; i++){ %>
                     <div class="local_box mg">
                         <div class="text_box">
-                            <p class="text1"><%- popular_list[i].text1 %></p>
+                            <h3 class="text1"><%- popular_list[i].text1 %></h3>
                             <p class="text2"><%- popular_list[i].text2 %></p>
                         </div>
                         <a href="#">
                             <div class="hover_box">
                                 <div class="wrap">
-                                    <p class="local"><%- popular_list[i].local %></p>
-                                    <p class="addr"><%- popular_list[i].addr %></p>
+                                    <h3 class="local"><%- popular_list[i].local %></h3>
+                                    <address class="addr"><%- popular_list[i].addr %></address>
                                     <p class="call"><%- popular_list[i].call %></p>
                                 </div>
                             </div>
@@ -117,13 +99,13 @@
                 </div>
                 <div class="context_wrap">
                     <div class="left">
-                        <video src="/video/pocheon.mp4" muted loop autoplay></video>
+                        <video src="./video/pocheon.mp4" muted loop autoplay></video>
                     </div>
                     <div class="right">
                         <article class="box_list">
-                            <img class="phcheon_img" src="/img/pocheon01.jpg" alt="포천 반월성 이미지입니다.">
+                            <img class="phcheon_img" src="./img/pocheon01.jpg" alt="포천 반월성">
                             <div class="text_box">
-                                <p class="text1"><a href="#">포천 반월성</a></p>
+                                <h3 class="text1"><a href="#">포천 반월성</a></h3>
                                 <p class="text2">
                                     포천 반월성은 경기도 포천시 군내면 구읍리, 청성산에 있는 산성입니다.
                                     1998년 2월 20일 대한민국의 사적 제403호 포천반월성지로 지정되었으나, 2011년 7월 28일 포천 반월성으로 문화재 명칭이 변경되었습니다.
@@ -131,9 +113,9 @@
                             </div>
                         </article>
                         <article class="box_list">
-                            <img class="phcheon_img" src="/img/pocheon02.jpg" alt="포천 아트밸리 이미지입니다.">
+                            <img class="phcheon_img" src="./img/pocheon02.jpg" alt="포천 아트밸리">
                             <div class="text_box">
-                                <p class="text1"><a href="#">포천아트밸리</a></p>
+                                <h3 class="text1"><a href="#">포천아트밸리</a></h3>
                                 <p class="text2">
                                     포천 아트밸리는 2003년부터 버려져 방치되어 있었던 신북면 기지리의 폐채석장의 환경을 복원한 복합 문화예술공간입니다.
                                     이곳에서 아름다운 자연과 예술을 같이 느낄 수 있습니다.
@@ -141,9 +123,9 @@
                             </div>
                         </article>
                         <article class="box_list">
-                            <img class="phcheon_img" src="/img/pocheon03.jpg" alt="포천의 고모 호수공원 이미지입니다.">
+                            <img class="phcheon_img" src="./img/pocheon03.jpg" alt="포천 고모 호수공원">
                             <div class="text_box">
-                                <p class="text1"><a href="#">고모호수공원</a></p>
+                                <h3 class="text1"><a href="#">고모호수공원</a></h3>
                                 <p class="text2">
                                     본래 포천평야에 농업용수를 확보하기 위한 목적으로 건설됐지만 현재는 자연공원의 역할을 하고 있습니다.
                                     가볍게 산책을 즐길 수도 있지만 저수지 일대를 편하게 구경할 수 있도록 유람선과 모터보트, 오리배 등도 마련돼있습니다.<br>
@@ -151,9 +133,9 @@
                             </div>
                         </article>
                         <article class="box_list">
-                            <img class="phcheon_img" src="/img/pocheon04.jpg" alt="포천의 허브아일랜드 이미지입니다.">
+                            <img class="phcheon_img" src="./img/pocheon04.jpg" alt="포천 허브아일랜드">
                             <div class="text_box">
-                                <p class="text1"><a href="#">허브아일랜드</a></p>
+                                <h3 class="text1"><a href="#">허브아일랜드</a></h3>
                                 <p class="text2">
                                     13만평의 부지위에 허브의 원산지인 지중해의 '생활속의 허브'를 테마로 운영하고 있습니다. 허브식물박물관, 산속정원, 산타마을 등의 30여가지 관광, 편의시설이 있으며, 매년 불빛동화축제를 개최하고 있습니다.
                                 </p>
@@ -174,7 +156,7 @@
                     <article class="bus_box">
                         <a href="#">
                             <div class="tour_img">
-                                <img src="/img/bus_tour01.jpg" alt="강릉의 경포해변 이미지입니다.">
+                                <img src="./img/bus_tour01.jpg" alt="강릉 경포해변">
                             </div>
                             <div class="tour_info">
                                 <h3 class="tour_title">강릉 자유여행 당일출발</h3>
@@ -190,7 +172,7 @@
                     <article class="bus_box">
                         <a href="#">
                             <div class="tour_img">
-                                <img src="/img/bus_tour02.jpg" alt="인천의 송도센트럴파크 이미지입니다.">
+                                <img src="./img/bus_tour02.jpg" alt="인천 송도센트럴파크">
                             </div>
                             <div class="tour_info">
                                 <h3 class="tour_title">인천으로 떠나자! 인천 야경 투어</h3>
@@ -206,7 +188,7 @@
                     <article class="bus_box">
                         <a href="#">
                             <div class="tour_img">
-                                <img src="/img/bus_tour03.jpg" alt="전주의 한옥마을 이미지입니다.">
+                                <img src="./img/bus_tour03.jpg" alt="전주 한옥마을">
                             </div>
                             <div class="tour_info">
                                 <h3 class="tour_title">청춘여행, 전주로 출발하자!</h3>
@@ -222,7 +204,7 @@
                     <article class="bus_box">
                         <a href="#">
                             <div class="tour_img">
-                                <img src="/img/bus_tour04.jpg" alt="고창읍성 이미지입니다.">
+                                <img src="./img/bus_tour04.jpg" alt="고창읍성">
                             </div>
                             <div class="tour_info">
                                 <h3 class="tour_title">고창 1박 2일 버스투어</h3>
@@ -245,31 +227,31 @@
                     <h2 class="title">이번 달 많이 찾은 지역</h2>
                 </div>
                 <div class="count_wrap">
-                    <article class="count_box">
-                        <div class="img"><img src="/img/symbol01.jpg" alt="제주도의 심볼마크 이미지입니다."></div>
+                    <div class="count_box">
+                        <div class="img"><img src="./img/symbol01.jpg" alt="제주도 심볼마크"></div>
                         <p class="local_name">제주</p>
                         <p class="count_number">0</p>
-                    </article>
-                    <article class="count_box">
-                        <div class="img"><img src="/img/symbol02.jpg" alt="부산의 심볼마크 이미지입니다."></div>
+                    </div>
+                    <div class="count_box">
+                        <div class="img"><img src="./img/symbol02.jpg" alt="부산 심볼마크"></div>
                         <p class="local_name">부산</p>
                         <p class="count_number">0</p>
-                    </article>
-                    <article class="count_box">
+                    </div>
+                    <div class="count_box">
                         <div class="img"><img src="/img/symbol03.jpg" alt="서울의 심볼마크 이미지입니다."></div>
                         <p class="local_name">서울</p>
                         <p class="count_number">0</p>
-                    </article>
-                    <article class="count_box">
-                        <div class="img"><img src="/img/symbol04.jpg" alt="전주의 심볼마크 이미지입니다."></div>
+                    </div>
+                    <div class="count_box">
+                        <div class="img"><img src="./img/symbol04.jpg" alt="전주 심볼마크"></div>
                         <p class="local_name">전주</p>
                         <p class="count_number">0</p>
-                    </article>
-                    <article class="count_box">
-                        <div class="img"><img src="/img/symbol05.jpg" alt="강릉의 심볼마크 이미지입니다."></div>
+                    </div>
+                    <div class="count_box">
+                        <div class="img"><img src="./img/symbol05.jpg" alt="강릉 심볼마크"></div>
                         <p class="local_name">강릉</p>
                         <p class="count_number">0</p>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>

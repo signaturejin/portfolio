@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>호텔(서브페이지)</title>
     <%- include("common/font_icon.ejs"); %>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <%- include("common/header.ejs"); %>
-    <div id="container">
+    <main id="container">
         <%- include("common/banner.ejs"); %>
         <!-- where 영역 -->
-        <div class="where">
+        <section class="where">
             <div class="center">
                 <h3 class="title">어디로 가시나요?</h3>
                 <div class="sub_popular_local">
@@ -21,25 +21,25 @@
                     <div class="local_list_wrap">
                         <a href="#">
                             <div class="local_list">
-                                <img class="local_bg" src="/img/jeju.jpg" alt="제주도 풍경 이미지입니다.">
+                                <img class="local_bg" src="./img/jeju.jpg" alt="제주도 풍경">
                                 <div class="text_box"><span class="hash_tag">#</span>제주</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="local_list">
-                                <img class="local_bg" src="/img/busan.jpg" alt="부산 풍경 이미지입니다.">
+                                <img class="local_bg" src="./img/busan.jpg" alt="부산 풍경">
                                 <div class="text_box"><span class="hash_tag">#</span>부산</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="local_list">
-                                <img class="local_bg" src="/img/seoul2.jpg" alt="서울 풍경 이미지입니다.">
+                                <img class="local_bg" src="./img/seoul2.jpg" alt="서울 풍경">
                                 <div class="text_box"><span class="hash_tag">#</span>서울</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="local_list">
-                                <img class="local_bg" src="/img/chuncheon.jpg" alt="춘천 풍경 이미지입니다.">
+                                <img class="local_bg" src="./img/chuncheon.jpg" alt="춘천 풍경">
                                 <div class="text_box"><span class="hash_tag">#</span>춘천</div>
                             </div>
                         </a>
@@ -50,34 +50,34 @@
                     <div class="theme_list_wrap">
                         <a href="#">
                             <div class="theme_list">
-                                <img class="theme_bg" src="/img/modern.jpg" alt="모던한 분위기의 방 이미지입니다.">
+                                <img class="theme_bg" src="./img/modern.jpg" alt="모던한 분위기의 방">
                                 <div class="text_box"><span class="hash_tag">#</span>모던한</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="theme_list">
-                                <img class="theme_bg" src="/img/expensive.jpg" alt="고급진 분위기의 방 이미지입니다.">
+                                <img class="theme_bg" src="./img/expensive.jpg" alt="고급진 분위기의 방">
                                 <div class="text_box"><span class="hash_tag">#</span>고급진</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="theme_list">
-                                <img class="theme_bg" src="/img/cozy.jpg" alt="아늑한 분위기의 방 이미지입니다.">
+                                <img class="theme_bg" src="./img/cozy.jpg" alt="아늑한 분위기의 방">
                                 <div class="text_box"><span class="hash_tag">#</span>아늑한</div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="theme_list">
-                                <img class="theme_bg" src="/img/colorful.jpg" alt="화려한 분위기의 방 이미지입니다.">
+                                <img class="theme_bg" src="./img/colorful.jpg" alt="화려한 분위기의 방">
                                 <div class="text_box"><span class="hash_tag">#</span>화려한</div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- many_hotel 영역 -->
-        <div class="many_hotel">
+        <section class="many_hotel">
             <div class="center">
                 <div class="text_box">
                     <h3 class="title">이 달의<span> 특가</span> 숙소</h3>
@@ -87,7 +87,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel01.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel01.jpg" alt="유탑 유블레스 호텔">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>4성급</span>
@@ -99,7 +99,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel02.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel02.jpg" alt="소노캄 여수">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>5성급</span>
@@ -111,7 +111,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel03.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel03.jpg" alt="롯데 제주 호텔">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>5성급</span>
@@ -123,7 +123,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel04.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel04.jpg" alt="베스트 워스턴 플러스">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>4성급</span>
@@ -135,7 +135,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel05.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel05.jpg" alt="38 마린 리조트">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>4성급</span>
@@ -147,7 +147,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel06.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel06.jpg" alt="호텔 라온제나">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>3성급</span>
@@ -159,7 +159,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel07.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel07.jpg" alt="파라다이스 시티">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>5성급</span>
@@ -171,7 +171,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel08.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel08.jpg" alt="페어필드 바이 메리어트 서울">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>5성급</span>
@@ -183,7 +183,7 @@
                         <div class="hotel_box">
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="/img/sub_hotel09.jpg" alt="호텔 이미지입니다.">
+                                    <img src="./img/sub_hotel09.jpg" alt="고현당">
                                 </div>
                                 <div class="rank">
                                     <i class="fa-solid fa-star"></i><span>5성급</span>
@@ -196,9 +196,9 @@
                 </div>
                 <a class="more_btn" href="">더보기<i class="fa-solid fa-plus"></i></a>
             </div>
-        </div>
+        </section>
         <!-- notice 영역 -->
-        <div class="notice">
+        <section class="notice">
             <div class="center">
                 <div class="notice_wrap">
                     <a href="#">
@@ -233,13 +233,13 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <!-- 하단 영역 -->
     <%- include("common/footer.ejs"); %>
     <!-- 맨 위로 가는 기능 -->
     <%- include("common/go_top.ejs"); %>
     <!-- js -->
-    <script src="/js/sub_more_hotel.js"></script>
+    <script src="./js/sub_more_hotel.js"></script>
 </body>
 </html>

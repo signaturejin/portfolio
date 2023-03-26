@@ -1731,7 +1731,7 @@
 #footer {
     background-color: #181818;
     color: #919191;
-    > div {
+    > section {
         .center {width: 57%; margin: 0 auto;}
     }
     .f_top {
@@ -1760,6 +1760,7 @@
             }
             .right {
                 font-size: 12px;
+                address {display: inline;}
                 .bar {
                     &::after {
                         content: ""; width: 1px; height: 11px;
