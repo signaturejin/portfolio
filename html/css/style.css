@@ -2238,7 +2238,7 @@ address {
   background-color: #181818;
   color: #919191;
 }
-#footer > section .center {
+#footer > div .center {
   width: 57%;
   margin: 0 auto;
 }
@@ -2712,11 +2712,12 @@ address {
   #container .detail_page .center .detail_wrap .com_wrap .com_insert #com_form .btn_wrap #com_btn {
     width: 100% !important;
   }
-  #footer > section .center {
+  #footer > div .center {
     width: 95%;
   }
-  #footer .f_top .f_menu {
+  #footer .f_top .center .f_menu {
     justify-content: center;
+    font-size: 11px;
   }
   #footer .f_bot .center {
     flex-direction: column;

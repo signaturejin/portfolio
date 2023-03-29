@@ -133,11 +133,13 @@
     }
     // 하단영역
     #footer {
-        > section {
+        > div {
             .center {width: 95%;}
         }
         .f_top {
-            .f_menu {justify-content: center;} 
+            .center {
+                .f_menu {justify-content: center; font-size: 11px;} 
+            }
         }
         .f_bot {
             .center {
